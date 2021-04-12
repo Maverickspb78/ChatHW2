@@ -19,7 +19,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
-@Component
+
+ @Component
 public class ChatController implements Initializable {
 
     public TextArea output;

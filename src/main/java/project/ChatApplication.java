@@ -11,14 +11,18 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-@Component
+
+
+ @Component
 public class ChatApplication extends Application {
+
 
     @Override
     public void start(Stage primaryStage) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(ClientConfig.class);
-        ChatApplication chatApplication = context.getBean("chatApplication", ChatApplication.class);
-        chatApplication.init(primaryStage);
+
+         ApplicationContext context = new AnnotationConfigApplicationContext(ClientConfig.class);
+         ChatApplication chatApplication = context.getBean("chatApplication", ChatApplication.class);
+         chatApplication.init(primaryStage);
     }
 
     public void init(Stage primaryStage) {
