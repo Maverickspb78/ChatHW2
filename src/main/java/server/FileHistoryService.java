@@ -9,8 +9,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
-
+ @Component
 public class FileHistoryService implements HistoryService {
 
     private static FileHistoryService instance;

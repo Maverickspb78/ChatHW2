@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-@Component
+ @Component
 public class RegistrationController implements Initializable {
 
     public TextField login;
@@ -25,7 +25,8 @@ public class RegistrationController implements Initializable {
     public TextField nickName;
     public Client client;
 
-    @Autowired
+
+     @Autowired
     public void setClient(Client client) {
         this.client = client;
     }

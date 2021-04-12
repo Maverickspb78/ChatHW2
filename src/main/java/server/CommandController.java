@@ -2,15 +2,13 @@ package server;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
-@Component
-@Scope("prototype")
+ @Component
 public class CommandController {
     DbController db;
     ConcurrentLinkedDeque<ClientHandler> clTmp;
