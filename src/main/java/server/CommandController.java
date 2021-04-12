@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
- @Component
+@Component
 public class CommandController {
     DbController db;
     ConcurrentLinkedDeque<ClientHandler> clTmp;

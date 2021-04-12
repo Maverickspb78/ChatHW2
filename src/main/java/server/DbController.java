@@ -6,7 +6,7 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.sql.*;
 
- @Component
+@Component
 public class DbController implements Closeable {
     private Connection connection;
     private Statement statement;

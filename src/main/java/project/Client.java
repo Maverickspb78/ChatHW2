@@ -12,7 +12,7 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
 
- @Component
+@Component
 public class Client implements Closeable{
 
     private static Client instance;
@@ -31,7 +31,7 @@ public class Client implements Closeable{
         }
         return instance;
     }
-    @Autowired
+     @Autowired
     public Client() throws IOException {
         this.socket = new Socket("localhost", 8189);
         this.in = new DataInputStream(socket.getInputStream());

@@ -12,14 +12,14 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 
- @Component
+@Component
 public class AuthController{
 
     public TextField login;
     public TextField password;
     public Client client;
 
- @Autowired
+    @Autowired
     public void setClient(Client client) {
         this.client = client;
     }

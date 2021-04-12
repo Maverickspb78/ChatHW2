@@ -13,7 +13,7 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.sql.SQLException;
 
- @Component
+@Component
 public class ClientHandler implements Runnable, Closeable {
 
     private DbController dbController;
@@ -34,17 +34,17 @@ public class ClientHandler implements Runnable, Closeable {
         buffer = new byte[256];
     }
 
-     @Autowired
+    @Autowired
     public void setDbController(DbController dbController) {
         this.dbController = dbController;
     }
 
-     @Autowired
+    @Autowired
     public void setCommandController(CommandController commandController) {
         this.commandController = commandController;
     }
 
-     @Autowired
+    @Autowired
     public void setServer(EchoServer server) {
         this.server = server;
     }

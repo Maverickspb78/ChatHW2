@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 
- @Component
+@Component
 public class ChatController implements Initializable {
 
     public TextArea output;
@@ -29,7 +29,6 @@ public class ChatController implements Initializable {
     public MenuItem m1;
     public MenuItem m2;
     public MenuItem m3;
-
 
     public void send(ActionEvent actionEvent) {
         if (!input.getText().isEmpty()) {
